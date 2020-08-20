@@ -10,7 +10,7 @@ class Edit extends React.Component {
                 <form action={`/books/${_id}?_method=PUT`} method="POST">
                     Title: <input type="text" name="title" defaultValue={title}/> <br/>
                     Author: <input type="text" name="author" defaultValue={author}/> <br/>
-                    Description: <input type="text" name="author" defaultValue={description}/> <br/>
+                    Description: <input type="text" name="description" defaultValue={description}/> <br/>
                     <img src= {img}></img>
                     Finished Book: 
                     <input type="checkbox" name="finishedBook" checked={finishedBook}/>

@@ -19,7 +19,12 @@ router.get('/new', (req, res) => {
 });
 
 //DELETE
-
+router.delete('/:id', (req, res) => {
+    // Delete document from collection
+    Book.findByIdAndRemove(req.params.id, (err, book) => {
+        res.redirect('/books');
+    });
+});
 //UPDATE
 router.put('/:id', (req, res) => {
     req.body.finishedBook = req.body.finishedBook === "on" ? true : false;
