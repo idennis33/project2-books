@@ -23,12 +23,13 @@ mongoose.connection.once('open', () => {
 })
 
 // Controller
-
+const booksController = require('./controllers/books.js');
+app.use('/books', booksController);
 
 
 // Default route:
 app.get("/", (req, res) => {
-    res.send('Hello World')
+    res.redirect("/books");
   });
   
 // listen
