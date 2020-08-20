@@ -21,6 +21,14 @@ router.get('/new', (req, res) => {
 //DELETE
 
 //UPDATE
+router.put('/:id', (req, res) => {
+    req.body.finishedBook = req.body.finishedBook === "on" ? true : false;
+
+    // Update the fruit document using our model
+    Book.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, updatedModel) => {
+        res.redirect('/books');
+    });
+});
 
 //CREATE
 router.post('/', (req, res) => {
@@ -31,10 +39,20 @@ router.post('/', (req, res) => {
     }
     Book.create(req.body, (error, createdBook) => {
         res.redirect('/books');
+        console.log(error);
+        console.log(createdBook)
     });
 });
 //EDIT
-
+router.get('/:id/edit', (req, res) => {
+    // Find our document from the collection - using mongoose model
+    Book.findById(req.params.id, (err, foundBook) => {
+        // render the edit view and pass it the found fruit
+        res.render('books/Edit', {
+            book: foundBook
+        })
+    });
+});
 //SHOW
 router.get('/:id', (req, res) => {
     // Find the specific document

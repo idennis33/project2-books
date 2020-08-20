@@ -8,7 +8,7 @@ class Show extends React.Component {
                 <h1><p>{title}</p></h1>
                 <p>The {author} </p>
                 <p>{description}</p>
-                <p>{img}</p>
+                <img src= {img}></img>
                 <p>{finishedBook ? `Finished Book` : `Have not finished book`}</p>
             </div>
         )

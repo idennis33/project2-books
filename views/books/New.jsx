@@ -8,9 +8,9 @@ class New extends React.Component {
               <h1>Add Book to Collection</h1>
               </header>
               <form action="/books" method="POST">
-                  Title: <input type="text" name="name" /><br/>
+                  Title: <input type="text" name="title" /><br/>
                   Author: <input type="text" name="author" /><br/>
-                  Descritpion: <input type="text" name="description" /><br/>
+                  Description: <input type="text" name="description" /><br/>
                   Img: <input type="text" name = "img"/><br/>
                   Finsihed the book: <input type="checkbox" name="finishedBook" /><br/>
                   <input type="submit" name="" value="Add Book to Collection"/>
