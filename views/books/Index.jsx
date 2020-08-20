@@ -5,8 +5,8 @@ class Index extends React.Component {
         const { books } = this.props;
         return (
             <div>
-                <h1>Books Index Page</h1>
                 <nav>
+                    <h1>Books Index Page</h1>
                     <a href="/books/new">Add a New Book</a>
                 </nav>
                 <ul>
