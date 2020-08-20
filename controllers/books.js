@@ -36,6 +36,14 @@ router.post('/', (req, res) => {
 //EDIT
 
 //SHOW
-
+router.get('/:id', (req, res) => {
+    // Find the specific document
+    Book.findById(req.params.id, (error, foundBook) => {
+        // render the Show route and pass it the foundFruit
+        res.render('books/Show', {
+            book: foundBook
+        });
+    });
+});
 
 module.exports = router; 

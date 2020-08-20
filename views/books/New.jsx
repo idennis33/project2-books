@@ -10,7 +10,7 @@ class New extends React.Component {
               <form action="/books" method="POST">
                   Title: <input type="text" name="name" /><br/>
                   Author: <input type="text" name="author" /><br/>
-                  Descritpion: <input type="textarea" name="description" /><br/>
+                  Descritpion: <input type="text" name="description" /><br/>
                   Img: <input type="text" name = "img"/><br/>
                   Finsihed the book: <input type="checkbox" name="finishedBook" /><br/>
                   <input type="submit" name="" value="Add Book to Collection"/>
