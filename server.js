@@ -26,6 +26,8 @@ mongoose.connection.once('open', () => {
 const booksController = require('./controllers/books.js');
 app.use('/books', booksController);
 
+const wishsController = require('./controllers/wishs.js'); 
+app.use('/wishs',wishsController);
 
 // Default route:
 app.get("/", (req, res) => {
