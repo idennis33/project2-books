@@ -1,20 +1,21 @@
 const React = require('react');
-
+const Default = require('../components/Default.jsx')
 class Index extends React.Component {
     render() {
         const { books } = this.props;
         return (
+            <Default>
             <div>
                 <nav>
                     <h1>Books Index Page</h1>
                     <a href="/books/new">Add a New Book</a><br/>
                     <a href={`/wishs`}>Go to Wish List</a>
                 </nav>
-                <ul>
+                <ul className = "container d-flex p-4 flex-wrap">
                     {
                         books.map((book, i) => {
                             return (
-                                <li>
+                                <div className = 'card w-80'>
                                     <h1><a href={`/books/${book._id}`}>{book.title}</a></h1> 
                                     <h2>{book.author}</h2>
                                     <img src= {book.img}></img> <br></br>
@@ -26,12 +27,13 @@ class Index extends React.Component {
                                     </form>
                                     {/* Create a link to the edit route /fruits/id_of_fruit/edit */}
                                     <a href={`/books/${book._id}/edit`}>Edit</a>
-                                </li>
+                                </div>
                             )
                         })
                     }
                 </ul>
             </div>
+            </Default>
         )
     }
 }
