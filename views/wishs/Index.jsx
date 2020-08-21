@@ -15,7 +15,7 @@ class Index extends React.Component {
                         wishs.map((wish, i) => {
                             return (
                                 <li>
-                                    <h1><a href={`/wish/${wish._id}`}>{wish.title}</a></h1> 
+                                    <h1><a href={`/wishs/${wish._id}`}>{wish.title}</a></h1> 
                                     <h2>{wish.author}</h2>
                                     <img src= {wish.img}></img> <br></br>
                                     <h3>{wish.description}</h3>
