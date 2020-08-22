@@ -5,9 +5,6 @@ class About extends React.Component {
     return (
       <Default>
         <div>
-          <nav>
-            <a href={`/books`}>Go to Back to Book Collection</a>
-          </nav>
           <p>
             You wanted a place online where you can have a library of the books
             you owned and show if you read through them or not. Well here you go
