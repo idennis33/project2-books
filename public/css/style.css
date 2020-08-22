@@ -7,3 +7,9 @@ body{
     background-attachment: fixed;
     color: #ffffff;
 }
+
+p{
+    font-size: 50px;
+    color:black;
+    background-color: white;
+}
