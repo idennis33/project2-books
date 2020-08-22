@@ -30,7 +30,7 @@ router.put('/:id', (req, res) => {
     req.body.finishedBook = req.body.finishedBook === "on" ? true : false;
 
     // Update the fruit document using our model
-    Book.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, updatedModel) => {
+    Wish.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, updatedModel) => {
         res.redirect('/wishs');
     });
 });

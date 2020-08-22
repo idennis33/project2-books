@@ -7,9 +7,10 @@ class Index extends React.Component {
             <Default>
             <div>
                 <nav>
-                    <h1>Books Index Page</h1>
-                    <a href="/books/new">Add a New Book</a><br/>
-                    <a href={`/wishs`}>Go to Wish List</a>
+                    <h1>Books Collection</h1>
+                    <a href="/books/new">Add a New Book to Collection</a><br/>
+                    <a href={`/wishs`}>Go to Wish List</a><br/>
+                    <a href="books/about">About</a>
                 </nav>
                 <ul className = "container d-flex p-4 flex-wrap">
                     {

@@ -6,9 +6,9 @@ class Index extends React.Component {
         return (
             <div>
                 <nav>
-                    <h1>Wish Books Index Page</h1>
-                    <a href="/wishs/new">Add a New Book</a><br/>
-                    <a href={`/books`}>Go to Back to Books List</a>
+                    <h1>Wish Book List</h1>
+                    <a href="/wishs/new">Add a New Book to Wish List</a><br/>
+                    <a href={`/books`}>Go to Back to Book Collection</a>
                 </nav>
                 <ul>
                     {
