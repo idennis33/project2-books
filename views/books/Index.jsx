@@ -6,10 +6,10 @@ class Index extends React.Component {
     return (
       <Default>
         <div>
-          <ul className="container d-flex p-4 flex-wrap">
+          <ul className="container d-flex p-4 flex-wrap"style={{gap:"5px"}}>
             {books.map((book, i) => {
               return (
-                <div className="card" style={{width: '20rem'}}>
+                <div className="card" style={{width: '20rem', padding:'10'}}>
                   <h1>
                     <a href={`/books/${book._id}`}>{book.title}</a>
                   </h1>

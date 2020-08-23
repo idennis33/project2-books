@@ -7,7 +7,7 @@ class Index extends React.Component {
     return (
       <Default2>
         <div>
-          <ul className="container d-flex p-4 flex-wrap">
+          <ul className="container d-flex p-4 flex-wrap"style={{gap:"5px"}}>
             {wishs.map((wish, i) => {
               return (
                 <div className="card" style={{width: '20rem'}}>
