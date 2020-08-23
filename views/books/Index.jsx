@@ -9,24 +9,21 @@ class Index extends React.Component {
           <ul className="container d-flex p-4 flex-wrap">
             {books.map((book, i) => {
               return (
-                <div className="card w-80">
+                <div className="card" style={{width: '20rem'}}>
                   <h1>
                     <a href={`/books/${book._id}`}>{book.title}</a>
                   </h1>
                   <h2>{book.author}</h2>
-                  <img src={book.img}></img> <br></br>
-                  <h3>{book.description}</h3>
-                  {book.finishedBook
+                  <a href={`/books/${book._id}`}><img src={book.img}></img></a> <br></br>
+                  <h4>{book.finishedBook
                     ? `I finished the book`
-                    : `I haven't finished it yet`}
-                  {/* /fruits/id_of_the_fruit/override_post_method */}
+                    : `I haven't finished it yet`}</h4>
                   <form
                     action={`/books/${book._id}?_method=DELETE`}
                     method="POST"
                   >
                     <input type="submit" value="delete" />
                   </form>
-                  {/* Create a link to the edit route /fruits/id_of_fruit/edit */}
                   <a href={`/books/${book._id}/edit`}>Edit</a>
                 </div>
               );

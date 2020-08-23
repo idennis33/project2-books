@@ -7,30 +7,29 @@ class Index extends React.Component {
     return (
       <Default2>
         <div>
-          <ul>
+          <ul className="container d-flex p-4 flex-wrap">
             {wishs.map((wish, i) => {
               return (
+                <div className="card" style={{width: '20rem'}}>
                 <li>
                     <h1>Book Wish List</h1>
                   <h1>
                     <a href={`/wishs/${wish._id}`}>{wish.title}</a>
                   </h1>
                   <h2>{wish.author}</h2>
-                  <img src={wish.img}></img> <br></br>
-                  <h3>{wish.description}</h3>
-                  {wish.finishedBook
+                  <a href={`/wishs/${wish._id}`}><img src={wish.img}></img></a> <br></br>
+                  <h4>{wish.finishedBook
                     ? `I finished the book`
-                    : `I haven't finished it yet`}
-                  {/* /fruits/id_of_the_fruit/override_post_method */}
+                    : `I haven't finished it yet`}</h4>
                   <form
                     action={`/wishs/${wish._id}?_method=DELETE`}
                     method="POST"
                   >
                     <input type="submit" value="delete" />
                   </form>
-                  {/* Create a link to the edit route /fruits/id_of_fruit/edit */}
                   <a href={`/wishs/${wish._id}/edit`}>Edit</a>
                 </li>
+                </div>
               );
             })}
           </ul>

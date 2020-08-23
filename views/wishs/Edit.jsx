@@ -13,28 +13,28 @@ class Edit extends React.Component {
     } = this.props.wish;
     return (
       <Default2>
-        <div>
+        <div className="container d-flex p-4 flex-wrap card" style={{width: '25rem'}}>
           <h1>Edit Page</h1>
 
           <form action={`/wishs/${_id}?_method=PUT`} method="POST">
-            Title: <input type="text" name="title" defaultValue={title} />{" "}
+            <h3>Title: <input type="text" name="title" defaultValue={title} /></h3>{" "}
             <br />
-            Author: <input
+            <h3>Author: <input
               type="text"
               name="author"
               defaultValue={author}
-            />{" "}
+            /></h3>{" "}
             <br />
-            Description:{" "}
+            <h3>Description:{" "}
             <input
               type="text"
               name="description"
               defaultValue={description}
-            />{" "}
+            /></h3>{" "}
             <br />
             <img src={img}></img>
-            Finished Book:
-            <input type="checkbox" name="finishedBook" checked={finishedBook} />
+            <h4 style= {{color: 'black'}}>Finished Book:
+            <input type="checkbox" name="finishedBook" checked={finishedBook} /></h4>
             <br />
             <input type="submit" name="" value="Submit Book Changes" />
           </form>
