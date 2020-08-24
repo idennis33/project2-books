@@ -13,6 +13,10 @@ router.get('/', (req, res) => {
 
 });
 
+router.get('/about',(req,res)=>{
+    res.render('wishs/About')
+})
+
 // New
 router.get('/new', (req, res) => {
     res.render('wishs/New');

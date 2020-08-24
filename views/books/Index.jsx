@@ -9,22 +9,24 @@ class Index extends React.Component {
           <ul className="container d-flex p-4 flex-wrap"style={{gap:"5px"}}>
             {books.map((book, i) => {
               return (
-                <div className="card" style={{width: '20rem', padding:'10', backgroundColor:'whitesmoke', textAlign:'center'}}>
+                <div className="card" style={{width: '20rem', padding:'10',backgroundColor:'lightyellow',opacity:'.9', textAlign:'center'}}>
                   <h1>
                     <a href={`/books/${book._id}`}>{book.title}</a>
                   </h1>
-                  <h2>{book.author}</h2>
+                  <h2>By: {book.author}</h2>
                   <a href={`/books/${book._id}`}><img src={book.img}></img></a> <br></br>
-                  <h4>{book.finishedBook
+                  <h4 className={book.finishedBook?'green':'red'}
+                  >{book.finishedBook
                     ? `I finished the book`
                     : `I haven't finished it yet`}</h4>
                   <form
                     action={`/books/${book._id}?_method=DELETE`}
                     method="POST"
                   >
-                    <input type="submit" value="delete" />
+                    <input type="submit" value="DELETE" />
                   </form>
-                  <a href={`/books/${book._id}/edit`}>Edit</a>
+                  <form action={`/books/${book._id}/edit`}><input type = 'submit' value= 'EDIT'/>
+                  </form>
                 </div>
               );
             })}
