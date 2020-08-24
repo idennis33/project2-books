@@ -10,9 +10,8 @@ class Index extends React.Component {
           <ul className="container d-flex p-4 flex-wrap"style={{gap:"5px"}}>
             {wishs.map((wish, i) => {
               return (
-                <div className="card" style={{width: '20rem'}}>
-                <li>
-                    <h1>Book Wish List</h1>
+                <div className="card" style={{width: '20rem', backgroundColor:'whitesmoke'}}>
+                <li style={{listStyleType:'none'}}>
                   <h1>
                     <a href={`/wishs/${wish._id}`}>{wish.title}</a>
                   </h1>

@@ -13,9 +13,7 @@ class Edit extends React.Component {
     } = this.props.wish;
     return (
       <Default2>
-        <div className="container d-flex p-4 flex-wrap card" style={{width: '25rem'}}>
-          <h1>Edit Page</h1>
-
+        <div className="container d-flex p-4 flex-wrap card" style={{width: '25rem', backgroundColor:'whitesmoke'}}>
           <form action={`/wishs/${_id}?_method=PUT`} method="POST">
             <h3>Title: <input type="text" name="title" defaultValue={title} /></h3>{" "}
             <br />

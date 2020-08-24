@@ -5,7 +5,7 @@ class About extends React.Component {
     return (
       <Default2>
         <div>
-          <p>
+          <p style={{backgroundColor:'whitesmoke'}}>
             This page is for you for any future books that you want to own in the near future. 
           </p>
         </div>
