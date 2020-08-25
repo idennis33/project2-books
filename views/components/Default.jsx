@@ -28,7 +28,7 @@ class Default extends React.Component {
                         <a className="nav-link" href={`/books/new`}>Add New Book to Collection</a>
                     </li>
                     <li className="nav-item active">
-                        <a className="nav-link" href="books/about">About <span class="sr-only">(current)</span></a>
+                        <a className="nav-link" href="/books/about">About <span class="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item active">
                         <a className="nav-link" href={`/wishs`}>Wish List</a>

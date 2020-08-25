@@ -43,7 +43,7 @@ class Default2 extends React.Component {
                   </a>
                 </li>
                 <li className="nav-item active">
-                  <a className="nav-link" href="books/about">
+                  <a className="nav-link" href="/wishs/about">
                     About <span class="sr-only">(current)</span>
                   </a>
                 </li>
