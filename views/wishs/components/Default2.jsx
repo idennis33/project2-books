@@ -17,8 +17,8 @@ class Default2 extends React.Component {
         </head>
         <body>
           <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
-            <a className="navbar-brand" href={`/books`}>
-              Books Collection
+            <a className="navbar-brand" href={`/wishs`}>
+              Wish List 
             </a>
             <button
               className="navbar-toggler"
@@ -48,8 +48,8 @@ class Default2 extends React.Component {
                   </a>
                 </li>
                 <li className="nav-item active">
-                  <a className="nav-link" href={`/wishs`}>
-                    Wish List
+                  <a className="nav-link" href={`/books`}>
+                    Book Collection
                   </a>
                 </li>
               </ul>
