@@ -7,6 +7,5 @@ Unsolved problems are I would have loved to have put a login so users would have
 Notes To Self 
 
 Add a login so users have own indiviual collection of books. 
-buy button that push books from wish list to book collection.
-When im not on the index pages my about tab doesn't work. 
+Buy button that push books from wish list to book collection. 
 If user doesn't want to add a image I would like for it to put a default image until user updates the img later. 
