@@ -43,3 +43,10 @@ h4{
 a{
     color: black;
 }
+
+textarea{
+    width: 200px;
+    height: 100px;
+    max-width: 400px;
+    max-height: 150px;
+}

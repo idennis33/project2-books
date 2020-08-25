@@ -13,7 +13,7 @@ class New extends React.Component {
             <br />
             Author: <input type="text" name="author" placeholder="Add Author Name" />
             <br />
-            Description: <input type="text" name="description" placeholder="Add Description of book here"  />
+            Description: <textarea  id='description'name="description" placeholder="Add Description of book here"  />
             <br />
             Img: <input type="text" name="img" placeholder="Add Book Image Here" />
             <br />

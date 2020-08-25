@@ -24,8 +24,8 @@ class Edit extends React.Component {
             /></h3>{" "}
             <br />
             <h3>Description:{" "}
-            <input
-              type="text"
+            <textarea
+              id="description"
               name="description"
               defaultValue={description}
             /></h3>{" "}
