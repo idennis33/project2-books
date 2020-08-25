@@ -16,7 +16,7 @@ class New extends React.Component {
             <br />
             Description: <textarea  id='description'name="description" placeholder="Add Description of book here"  />
             <br />
-            Img: <input type="text" name="img" placeholdere="Add Book Image Here" />
+            Img: <input type="text" name="img" placeholder="Add Book Image Here" />
             <br />
             Finsihed the book: <input type="checkbox" name="finishedBook" />
             <br />
